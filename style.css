@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f0f1f4;
+}
+
+.main_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  font-family: "Poppins", sans-serif;
+  margin: 4rem 6rem;
+  background-color: #ffffff;
+}
+
+/* Right Container Start */
+.right_container {
+  background: transparent url("images/Group\ 5572.svg") 0% 0% no-repeat
+    padding-box;
+  opacity: 1;
+  background-color: #e9f5f7;
+  width: 50%;
+  padding: 5rem;
+}
+
+.rigth_content-box {
+  text-align: left;
+}
+
+.rigth_content-box .right-title-img {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.rigth_content-box .right-title-img img {
+  width: 70%;
+}
+
+.right-description p {
+  color: #233b58;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.right-description p span {
+  color: #01b2ae;
+}
+
+.group_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  margin-top: 2rem;
+}
+
+.group_container .group_img img {
+  width: 80%;
+}
+
+.group-item-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+
+.group-item-container .group-text h2 {
+  font-size: 1rem;
+  color: #01b2ae;
+}
+
+.group-item-container .group-text p {
+  font-size: 0.8rem;
+  color: #233b58;
+}
+
+.button_container button {
+  background-color: #01b2ae;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+
+  margin-top: 3rem;
+  padding: 0.5rem 2rem;
+}
+
+.button_container p {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #233b58;
+}
+
+.merit_container {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  margin-top: 5rem;
+}
+
+.merit_container img {
+  width: 70%;
+}
+/* Right Container End */
+
+/* Left Container Start */
+.left_container {
+  padding: 5rem;
+  width: 50%;
+}
+
+.left-title h1 {
+  font-size: 1.6rem;
+  color: #233b58;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+}
+
+.left-title p {
+  font-size: 0.9rem;
+  color: #233b58;
+}
+
+/* Left Form Start */
+.form_container {
+  margin-top: 2rem;
+}
+
+.other_input-container input {
+  width: 97%;
+  padding: 0.4rem;
+  margin-bottom: 1.5rem;
+
+  border-radius: 3px;
+  border: 1px solid #dddddd;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.name_input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.first_name-input-box,
+.last_name-input-box {
+  width: 200px;
+}
+
+.first_name-input-box input,
+.last_name-input-box input {
+  width: 93%;
+  padding: 0.4rem;
+  margin-bottom: 1.5rem;
+
+  border-radius: 3px;
+  border: 1px solid #dddddd;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.first_name-input-box input:focus,
+.last_name-input-box input:focus,
+.other_input-container input:focus {
+  border: 1px solid #01b2ae;
+}
+
+select {
+  width: 100%;
+  padding: 0.4rem;
+  margin-bottom: 1rem;
+  border-radius: 3px;
+  border: 1px solid #e5e5e5;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+.form_container button {
+  background-color: #01b2ae;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  width: 100%;
+
+  padding: 0.9rem;
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .main_container {
+    margin: 4rem 4rem;
+  }
+
+  .left_container,
+  .right_container {
+    padding: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main_container {
+    margin: 3.1rem 3rem;
+  }
+
+  .group-item-container .group-text h2{
+    font-size: .9rem;
+  }
+
+  .left_container,
+  .right_container {
+    padding: 2rem;
+    width: 40%;
+  }
+
+  .left-title h1 {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+
+  .right-description p {
+    font-size: 1.2rem;
+  }
+
+  .rigth_content-box .right-title-img {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .main_container {
+    margin: 1rem 1rem;
+    flex-wrap: wrap;
+  }
+
+  .left_container, .right_container{
+    width: 84%;
+  }
+}
